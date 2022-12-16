@@ -1,0 +1,131 @@
+:root {
+  --color-primary: #febd69;
+  --color-secondary: #232f3e;
+  --color-tertiary: #37475a;
+  --color-last: #131a22;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.choose-method {
+  padding: 20px;
+}
+.choose-method-form {
+  display: flex;
+  flex-direction: column;
+}
+.method-img {
+  width: 100px;
+  height: 56px;
+  object-fit: cover;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+}
+
+.credit-card-data {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cc-data {
+  outline: none;
+  padding: 10px;
+}
+.cc-submit {
+  width: fit-content;
+  align-self: flex-end;
+  padding: 4px 6px;
+  background: var(--color-primary);
+  border: none;
+  padding: 12px 16px;
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.cc-submit:hover {
+  background: #febd69d7;
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.summary-data {
+  max-height: 60%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  overflow-y: scroll;
+}
+.summary-data::-webkit-scrollbar {
+  width: 0;
+}
+.summary-card {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding-right: 12px;
+}
+.summary-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.summary-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+.summary-title {
+  padding: 1px;
+}
+
+.summary-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.summary-quantity {
+  font-size: 12px;
+  font-weight: 400;
+}
+.summary-price {
+  font-weight: 500;
+}
+.summary-total {
+  margin-top: 20px;
+  align-self: flex-end;
+  padding-right: 12px;
+}
+.checkout-modal {
+  width: 60%;
+  height: 400px;
+  top: calc(50% - 200px);
+  left: calc(50% - 30%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  position: absolute;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  gap: 22px;
+}
+.checkout-modal-title {
+  font-size: 24px;
+}
+.title-error {
+  color: red;
+}

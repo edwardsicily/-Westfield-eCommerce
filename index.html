@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Westfield eCommerce</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="auth.css" />
+
+    <script defer src="./utils.js" type="module"></script>
+    <script defer src="./app.js" type="module"></script>
+    <!-- <script defer src="./cart.js" type="module"></script> -->
+  </head>
+  <body>
+    <!-- <div class="overlay"></div> -->
+    <nav>
+      <img src="./src/westfield.png" class="nav-img" />
+      <div class="searchbar">
+        <input type="text" name="" id="" class="search-input" />
+        <span class="material-symbols-outlined search-icon"> search </span>
+      </div>
+
+      <div class="nav-btns">
+        <div class="profile">Accedi</div>
+
+        <span class="material-symbols-outlined language"> language </span>
+        <div class="checkout" data-before="">
+          <span class="material-symbols-outlined"> shopping_cart </span>
+          <h2>checkout</h2>
+        </div>
+      </div>
+      <span class="material-symbols-outlined hamburger"> menu </span>
+    </nav>
+    <div class="categories"></div>
+
+    <!-- LOGIN -->
+    <div class="auth-modal hide">
+      <div class="moving-modals">
+        <div class="login-modal">
+          <h2>LOGIN</h2>
+          <form class="login-form" name="login-form">
+            <input
+              type="text"
+              name="login-text"
+              placeholder="Name"
+              required
+              autocomplete="off"
+            />
+            <input
+              type="password"
+              name="login-password"
+              placeholder="Password"
+              required
+              autocomplete="off"
+            />
+            <input class="send-login" type="submit" value="SEND" />
+          </form>
+          <p class="goto-signup">sign up</p>
+        </div>
+        <div class="signup-modal">
+          <h2>SIGN UP</h2>
+          <form class="signup-form" name="signup-form">
+            <input type="text" name="signup-text" placeholder="Name" />
+            <input
+              type="password"
+              name="signup-password"
+              placeholder="Password"
+            />
+            <input type="submit" value="SEND" />
+          </form>
+          <p class="goto-login">login</p>
+        </div>
+      </div>
+    </div>
+    <!-- checkout MODAL -->
+    <div class="checkout-modal hide">
+      <h2 class="checkout-title">Carrello</h2>
+      <div class="checkout-cards">
+        <h2>CARRELLO VUOTO</h2>
+      </div>
+      <hr />
+      <div class="checkout-pay">
+        <div class="pay-total">
+          <h4>Total</h4>
+          <h3 class="pay-amount">27</h3>
+        </div>
+        <button class="goto-payment">Checkout</button>
+        <!-- <form action="./checkout.html">
+          <input type="submit" class="goto-payment" value="Checkout" />
+        </form> -->
+      </div>
+    </div>
+    <!-- CAROUSEL -->
+
+    <div class="carousel">
+      <div class="slider">
+        <div class="slide slide-top">
+          <img src="./src/carousel1.jpg" />
+        </div>
+        <div class="slide">
+          <img src="./src/carousel2.jpg" />
+        </div>
+        <div class="slide">
+          <img src="./src/carousel3.jpg" />
+        </div>
+        <span class="material-symbols-outlined btn prev"> chevron_left </span>
+        <span class="material-symbols-outlined btn next"> chevron_right </span>
+      </div>
+    </div>
+
+    <div class="categories-images"></div>
+    <div class="main-content">
+      <div class="filter hide">
+        <h3>Prezzo</h3>
+        <p class="less20">Less than 20</p>
+        <p class="less50">Less than 50</p>
+        <p class="less100">Less than 100</p>
+        <p class="less200">Less than 200</p>
+        <p class="less500">Less than 500</p>
+        <p class="more500">More than 500</p>
+      </div>
+      <div class="content-list"></div>
+    </div>
+
+    <footer>
+      <div class="scroll">
+        <div class="scroll-container">
+          <p class="scroll-text">Go back up</p>
+          <span class="material-symbols-outlined"> arrow_upward </span>
+        </div>
+      </div>
+      <div class="useful-links">
+        <div class="footer-link">
+          <h3>Per conoscerci meglio</h3>
+          <hr />
+          <p>Lavora con noi</p>
+          <p>Informazioni su di noi</p>
+          <p>Sostenibilità</p>
+        </div>
+
+        <div class="footer-link">
+          <h3>Guadagna con noi</h3>
+          <hr />
+          <p>Vendi su Westfield</p>
+          <p>Informazioni su di noi</p>
+          <p>Sostenibilità</p>
+        </div>
+
+        <div class="footer-link">
+          <h3>Metodi di pagamento Westfield</h3>
+          <hr />
+          <p>Metodi di pagamento</p>
+          <p>Buoni regali</p>
+          <p>Ricarica online</p>
+          <p>Ricarica in cassa</p>
+        </div>
+
+        <div class="footer-link">
+          <h3>Bisogno di aiuto?</h3>
+          <hr />
+          <p>Visualizza un ordine</p>
+          <p>Costi di spedizione</p>
+          <p>Servizio clienti</p>
+          <p>Garanzia legale</p>
+          <p>Accessibilità</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

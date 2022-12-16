@@ -1,0 +1,80 @@
+:root {
+  --color-primary: #febd69;
+  --color-secondary: #232f3e;
+  --color-tertiary: #37475a;
+  --color-last: #131a22;
+}
+.auth-modal {
+  width: 250px;
+  background: var(--color-tertiary);
+  position: absolute;
+  top: 10px;
+  left: 30%;
+  z-index: 11;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.auth-modal h2 {
+  color: white;
+}
+.moving-modals {
+  display: flex;
+  gap: 40px;
+  transition: all 0.8s ease-in-out;
+}
+.login-modal {
+  padding: 12px;
+  background: var(--color-tertiary);
+}
+.signup-modal {
+  padding: 12px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 12px;
+}
+.login-form input {
+  padding: 4px;
+  outline: none;
+}
+
+.signup-form {
+  outline: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 12px;
+}
+.signup-form input {
+  padding: 4px;
+  outline: none;
+}
+
+.goto-signup {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.goto-login {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.goto-signup:hover {
+  text-decoration: underline;
+}
+.goto-login:hover {
+  text-decoration: underline;
+}
+.send-login {
+  background: var(--color-primary);
+  border: none;
+  padding: 4px 6px;
+  border-radius: 2px;
+}
